@@ -7,6 +7,6 @@ public class MatchMaker {
 	public MatchMaker(DictHasher dh){
 		dictWords = dh.getDictWords();
 		dictHashes = dh.getDictHashes();
-		hashWords = dh.getHashWords();
+		hashWords = dh.getHashWords();//test
 	}
 }
