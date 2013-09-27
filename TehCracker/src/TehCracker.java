@@ -16,6 +16,12 @@ public class TehCracker {
 			printUsage();
 		}
 		DictHasher dh = new DictHasher(args[0], args[1]);
+		MatchMaker mm = new MatchMaker(dh);
+		mm.printCollisions();
+		
+		
+//		StringHasher sh = new StringHasher();
+//		System.out.print(sh.hashTheString("password"));
 		
 	}
 	
