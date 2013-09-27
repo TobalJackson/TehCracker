@@ -21,6 +21,7 @@ public class DictHasher {
 		}
 		dictWords = fr.getDictEntries();
 		hashWords = fr.getHashEntries();
+		System.out.println("Hashing Dictionary...");
 		for (String word : dictWords){
 			dictHashes.add(sh.hashTheString(word));
 		}
