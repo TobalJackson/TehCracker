@@ -18,6 +18,7 @@ public class MatchMaker {
 		for (int i = 0; i < dictWords.size(); i++){
 			hashTable.put(dictHashes.get(i), dictWords.get(i));
 		}
+		System.out.println("Searching for collisions...");
 		findCollisions();
 	}
 	
@@ -36,7 +37,7 @@ public class MatchMaker {
 	public void printCollisions(){
 		System.out.println("Matches Found:");
 		for (String key : matchTable.keySet()){
-			System.out.println("Key: \"" + key + " Matched Hash: " + matchTable.get(key));
+			System.out.println("Hash: \"" + key + "\" Key: " + matchTable.get(key));
 		}
 	}
 	
