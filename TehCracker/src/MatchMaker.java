@@ -37,7 +37,7 @@ public class MatchMaker {
 	public void printCollisions(){
 		System.out.println("Matches Found:");
 		for (String key : matchTable.keySet()){
-			System.out.println("Hash: \"" + key + "\" Key: " + matchTable.get(key));
+			System.out.println("Hash: \"" + key + "\" Key: " + matchTable.get(key)); //this is a test comment
 		}
 	}
 	
