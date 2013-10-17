@@ -1,7 +1,11 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-//object which will hash a string and can retrieve the hashed string
+/**
+ * Object which has a single method, hashTheString, which will accept a string argument and return the hash String.
+ * @author helpdesk
+ *
+ */
 
 public class StringHasher {
 	

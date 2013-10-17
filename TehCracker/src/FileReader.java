@@ -6,7 +6,8 @@ import java.util.List;
 import java.io.IOException;
 
 /**
- * object which will open a file and get the lines from the file into List<String>s for both the dictionary and hashfile.
+ * object which will open a file and get the lines from the file into List<String>s for both the dictionary and hashfile. Provides getter methods for the dictFile and HashFile which return List<String>s. 
+ * @throws FileInaccessible on default constructor if either dictFile or hashFile are not-readable
  * @author tobaljackson
  *
  */

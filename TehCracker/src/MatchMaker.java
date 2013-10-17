@@ -1,6 +1,13 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
+/**
+ * Object which gets passed a DictHasher to perform the matching operation to discover collisions between the hashed dictionary and the hashfile's extracted hashes.
+ * @see getCollisions() - returns a HashMap<String, String> of all the matched hashes.
+ * @see printCollisions() - prints to stdout all the matched hashes.
+ * @author helpdesk
+ *
+ */
 public class MatchMaker {
 	private ArrayList<String> dictWords = null;
 	private ArrayList<String> dictHashes = null;
@@ -29,15 +36,20 @@ public class MatchMaker {
 			}
 		}
 	}
-	
+	/**
+	 * Method which returns all the collisions between the dictfile and hashfile.
+	 * @returns HashMap<String, String> of the collisions.
+	 */
 	public HashMap<String,String> getCollisions(){
 		return matchTable;
 	}
-	
+	/**
+	 * prints the collision data out to stdout.
+	 */
 	public void printCollisions(){
 		System.out.println("Matches Found:");
 		for (String key : matchTable.keySet()){
-			System.out.println("Hash: \"" + key + "\" Key: " + matchTable.get(key)); //this is a test comment
+			System.out.println("Hash: \"" + key + "\" Key: " + matchTable.get(key));
 		}
 	}
 	
