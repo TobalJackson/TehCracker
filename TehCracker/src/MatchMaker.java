@@ -5,7 +5,7 @@ import java.util.HashMap;
  * Object which gets passed a DictHasher to perform the matching operation to discover collisions between the hashed dictionary and the hashfile's extracted hashes.
  * @see getCollisions() - returns a HashMap<String, String> of all the matched hashes.
  * @see printCollisions() - prints to stdout all the matched hashes.
- * @author helpdesk
+ * @author TobalJackson
  *
  */
 public class MatchMaker {

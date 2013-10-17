@@ -3,7 +3,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Object which has a single method, hashTheString, which will accept a string argument and return the hash String.
- * @author helpdesk
+ * @author TobalJackson
  *
  */
 
