@@ -18,8 +18,8 @@ public class FileWriter {
 		List<String> sitKeys = new ArrayList<String>();
 		String sitPrefix = "SIT-";
 		try {
-			for(int i = 0; i < 1000000; i++){
-				String key = Integer.toHexString(i);
+			for(long i = 0; i < 1000000; i++){   //4294967295L replace 1000000 with 4294967295L to generate all the SIT Keys in file "sitkeys"!
+				String key = Long.toHexString(i);
 				StringBuilder keyPad = new StringBuilder(12);
 				keyPad.append(sitPrefix);
 				while((key.length() + keyPad.length()) < 12){
@@ -35,7 +35,9 @@ public class FileWriter {
 		catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(Integer.MAX_VALUE);
+		//System.out.println(Integer.MAX_VALUE & 0xFFFFFFF);
+		//System.out.println(Long.decode("0xFFFFFFFF"));
+		//System.out.println(Long.toHexString(4294967295L));
 	}
 	void writeTextFile(String fileName, List<String> linesToWrite) throws IOException{
 		Path path = Paths.get(fileName);
